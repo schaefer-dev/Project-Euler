@@ -2,7 +2,6 @@ start = 13
 end = 1000000
 amount = [0] * 1000001
 startcount = start
-
 while(startcount <= end):
     current = startcount
     while(current != 1):
@@ -16,7 +15,6 @@ while(startcount <= end):
             amount[startcount] += 1
     amount[startcount] += 1
     startcount+= 1
-
 maxi = 0
 result = 0
 i = 0
@@ -25,8 +23,4 @@ while(i <= end):
         maxi = amount[i]
         result = i
     i += 1
-
 print(result)
-
-
-
