@@ -1,7 +1,7 @@
 # simple solution using recursion
 
 #parameters:
-maxdepth = 15
+maxdepth = 15;
 
 def iter(x,y):
     if (y == maxdepth-1):
@@ -23,9 +23,8 @@ blocksize = 1
 row = 0
 while (counter < len(data)):
 	for i in range(0,blocksize):
-            Matrix[row][i] = data[counter]
+            Matrix[i][row] = data[counter]
             counter += 1
-        print(Matrix[row])
         blocksize += 1
         row += 1
 
